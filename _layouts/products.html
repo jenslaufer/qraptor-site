@@ -1,0 +1,8 @@
+---
+layout: archive
+---
+
+<h3 class="archive__subtitle">Our Products</h3>
+{% for product in site.products %}
+<p><a href="{{ product.url }}"><img alt="{{ product.title }}" src="{{ product.tile }}"></a></p>
+{% endfor %}
